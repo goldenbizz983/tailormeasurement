@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Bizz | Tailor Measurement Book</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="page-body">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="site-header-img" src="logo.jpeg" alt="Golden Bizz logo">
+      <div class="header-text">
+        <h1 class="header-brand">GOLDEN BIZZ</h1>
+        <p class="header-subtitle">Tailor Measurement Book</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <!-- CUSTOMER DETAILS -->
+    <section class="customer-section">
+      <h2 class="customer-title">Customer Details</h2>
+
+      <form class="measurement-form" id="measurementForm">
+
+        <div class="customer-grid">
+
+          <div class="name-box">
+            <label class="name-label" for="name">Customer Name</label>
+            <input class="name-input" type="text" id="name" placeholder="e.g Tunde Usman">
+          </div>
+
+          <div class="phone-box">
+            <label class="phone-label" for="phone">Phone Number</label>
+            <input class="phone-input" type="tel" id="phone" placeholder="09099093242">
+          </div>
+
+          <div class="gender-box">
+            <label class="gender-label" for="gender">Gender</label>
+            <select class="gender-input" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="unit-box">
+            <label class="unit-label" for="unit">Unit</label>
+            <select class="unit-input" id="unit">
+              <option value="inches">Inches</option>
+              <option value="cm">Centimetres</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- MALE MEASUREMENTS (later, JavaScript will show this only when Male is chosen) -->
+        <section class="male-section">
+          <h2 class="male-title">Male Measurements</h2>
+
+          <div class="male-grid">
+
+            <div class="male-chest-box">
+              <label class="male-chest-label" for="male-chest">Chest</label>
+              <input class="male-chest-input" type="number" step="0.1" id="male-chest">
+            </div>
+
+            <div class="male-waist-box">
+              <label class="male-waist-label" for="male-waist">Waist</label>
+              <input class="male-waist-input" type="number" step="0.1" id="male-waist">
+            </div>
+
+            <div class="male-hip-box">
+              <label class="male-hip-label" for="male-hip">Hip</label>
+              <input class="male-hip-input" type="number" step="0.1" id="male-hip">
+            </div>
+
+            <div class="male-shoulder-box">
+              <label class="male-shoulder-label" for="male-shoulder">Shoulder</label>
+              <input class="male-shoulder-input" type="number" step="0.1" id="male-shoulder">
+            </div>
+
+            <div class="male-sleeve-box">
+              <label class="male-sleeve-label" for="male-sleeve">Sleeve Length</label>
+              <input class="male-sleeve-input" type="number" step="0.1" id="male-sleeve">
+            </div>
+
+            <div class="male-neck-box">
+              <label class="male-neck-label" for="male-neck">Neck</label>
+              <input class="male-neck-input" type="number" step="0.1" id="male-neck">
+            </div>
+
+            <div class="male-shirt-box">
+              <label class="male-shirt-label" for="male-shirt">Shirt Length</label>
+              <input class="male-shirt-input" type="number" step="0.1" id="male-shirt">
+            </div>
+
+            <div class="male-trouser-box">
+              <label class="male-trouser-label" for="male-trouser">Trouser Length</label>
+              <input class="male-trouser-input" type="number" step="0.1" id="male-trouser">
+            </div>
+
+          </div>
+        </section>
+
+        <!-- FEMALE MEASUREMENTS (later, JavaScript will show this only when Female is chosen) -->
+        <section class="female-section">
+          <h2 class="female-title">Female Measurements</h2>
+
+          <div class="female-grid">
+
+            <div class="female-bust-box">
+              <label class="female-bust-label" for="female-bust">Bust</label>
+              <input class="female-bust-input" type="number" step="0.1" id="female-bust">
+            </div>
+
+            <div class="female-waist-box">
+              <label class="female-waist-label" for="female-waist">Waist</label>
+              <input class="female-waist-input" type="number" step="0.1" id="female-waist">
+            </div>
+
+            <div class="female-hip-box">
+              <label class="female-hip-label" for="female-hip">Hip</label>
+              <input class="female-hip-input" type="number" step="0.1" id="female-hip">
+            </div>
+
+            <div class="female-shoulder-box">
+              <label class="female-shoulder-label" for="female-shoulder">Shoulder</label>
+              <input class="female-shoulder-input" type="number" step="0.1" id="female-shoulder">
+            </div>
+
+            <div class="female-sleeve-box">
+              <label class="female-sleeve-label" for="female-sleeve">Sleeve Length</label>
+              <input class="female-sleeve-input" type="number" step="0.1" id="female-sleeve">
+            </div>
+
+            <div class="female-blouse-box">
+              <label class="female-blouse-label" for="female-blouse">Blouse Length</label>
+              <input class="female-blouse-input" type="number" step="0.1" id="female-blouse">
+            </div>
+
+            <div class="female-dress-box">
+              <label class="female-dress-label" for="female-dress">Dress / Gown Length</label>
+              <input class="female-dress-input" type="number" step="0.1" id="female-dress">
+            </div>
+
+            <div class="female-skirt-box">
+              <label class="female-skirt-label" for="female-skirt">Skirt Length</label>
+              <input class="female-skirt-input" type="number" step="0.1" id="female-skirt">
+            </div>
+
+          </div>
+        </section>
+        
+
+        <!-- EXTRA NOTE -->
+        <section class="extra-note-section">
+          <h2 class="extra-note-title">Extra Note</h2>
+          <textarea class="extra-note-input" id="notes" placeholder="Style, fabric, due date..."></textarea>
+        </section>
+
+        <!-- BUTTONS -->
+        <div class="buttons-section">
+          <button class="save-btn" type="submit">Save Customer</button>
+          <button class="clear-btn" type="reset">Clear Form</button>
+        </div>
+
+      </form>
+                <!-- SAVED CUSTOMERS -->
+          <section class="saved-section">
+            <h2 class="saved-title">Saved Customers</h2>
+            <div class="saved-list" id="savedList"></div>
+          </section>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p class="footer-text">Built @ Golden Bizz</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/TAILOR/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,672 @@
+/* Reset: removes the browser's default spacing. It sets no colours or sizes. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-body {
+  font-family: sans-serif;
+  background-color: purple;
+  color: #222222;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background: black;
+  border-bottom: 4px solid #d4a017;
+  padding: 12px 16px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.site-header-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-brand {
+  color: #d4a017;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.header-subtitle {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* ---------- MAIN PAGE ---------- */
+.page-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ---------- CUSTOMER SECTION ---------- */
+.customer-section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.customer-title {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.measurement-form {
+  display: block;
+}
+
+.customer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+/* Customer name */
+.name-box {
+  display: flex;
+  flex-direction: column;
+}
+.name-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.name-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Phone number */
+.phone-box {
+  display: flex;
+  flex-direction: column;
+}
+.phone-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.phone-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Gender */
+.gender-box {
+  display: flex;
+  flex-direction: column;
+}
+.gender-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.gender-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Unit */
+.unit-box {
+  display: flex;
+  flex-direction: column;
+}
+.unit-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.unit-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* ---------- MALE SECTION ---------- */
+.male-section {
+  border-top: 2px solid #d4a017;
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+
+.male-title {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.male-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* Male: chest */
+.male-chest-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-chest-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-chest-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Male: waist */
+.male-waist-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-waist-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-waist-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Male: hip */
+.male-hip-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-hip-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-hip-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Male: shoulder */
+.male-shoulder-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-shoulder-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-shoulder-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Male: sleeve length */
+.male-sleeve-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-sleeve-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-sleeve-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Male: neck */
+.male-neck-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-neck-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-neck-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Male: shirt length */
+.male-shirt-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-shirt-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-shirt-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Male: trouser length */
+.male-trouser-box {
+  display: flex;
+  flex-direction: column;
+}
+.male-trouser-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.male-trouser-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* ---------- FEMALE SECTION ---------- */
+.female-section {
+  border-top: 2px solid #d4a017;
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+
+.female-title {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.female-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* Female: bust */
+.female-bust-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-bust-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-bust-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Female: waist */
+.female-waist-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-waist-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-waist-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Female: hip */
+.female-hip-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-hip-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-hip-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Female: shoulder */
+.female-shoulder-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-shoulder-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-shoulder-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Female: sleeve length */
+.female-sleeve-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-sleeve-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-sleeve-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Female: blouse length */
+.female-blouse-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-blouse-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-blouse-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Female: dress / gown length */
+.female-dress-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-dress-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-dress-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Female: skirt length */
+.female-skirt-box {
+  display: flex;
+  flex-direction: column;
+}
+.female-skirt-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.female-skirt-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* ---------- EXTRA NOTE ---------- */
+.extra-note-section {
+  border-top: 2px solid #d4a017;
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+
+.extra-note-title {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.extra-note-input {
+  width: 100%;
+  height: 10em;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+/* ---------- BUTTONS ---------- */
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.save-btn {
+  background: #d4a017;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-btn {
+  background: #e4e4e4;
+  color: #222222;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* ---------- SAVED CUSTOMERS ---------- */
+.saved-section {
+  background: rgb(160, 3, 160);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.saved-title {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.saved-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.empty-message {
+  text-align: center;
+  color: white;
+  padding: 16px 0;
+}
+
+.customer-card {
+  border: 1px solid #e3ddcc;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fbf9f3;
+  min-width: 0; /* new: lets the card shrink to fit its column */
+}
+.card-name {
+  font-size: 18px;
+  color: #1a1a1a;
+  overflow-wrap: anywhere; /* new: lets a very long name break */
+}
+.card-phone {
+  font-size: 14px;
+  color: #666666;
+}
+
+.card-info {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.card-detail {
+  font-size: 14px;
+  padding: 3px 0;
+  border-bottom: 1px dotted #d6d2c6;
+}
+
+.card-notes {
+  font-size: 14px;
+  /* font-style: italic; */
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+.card-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.card-delete-btn {
+  background: #b3261e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: #1a1a1a;
+  padding: 16px;
+  text-align: center;
+}
+
+.footer-text {
+  color: #d4a017;
+  font-size: 13px;
+}
+
+/* ---------- TABLETS (600px and above) ---------- */
+@media (min-width: 600px) {
+  .customer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .buttons-section {
+    flex-direction: row;
+  }
+}
+
+/* ---------- LAPTOPS (700px and above) ---------- */
+@media (min-width: 700px) {
+  .site-header-img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .header-brand {
+    font-size: 30px;
+  }
+
+  .male-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .female-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .saved-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- LARGE SCREENS (1000px and above) ---------- */
+@media (min-width: 1000px) {
+  .male-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .female-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+    .saved-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
